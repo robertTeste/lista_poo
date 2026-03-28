@@ -1,18 +1,28 @@
 package exercicios;
+import java.util.ArrayList;
+
 public class Main {
     public static void main(String[] args) {
 
-        Carro c1 = new Carro();
-        c1.marca = "Toyota";
-        c1.modelo = "Corolla";
-        c1.ano = 2012;
+        ArrayList<Carro> lista = new ArrayList<>();
 
-        c1.exibir();
-        System.out.println(c1.idadeDoCarro());
+        lista.add(new Carro());
+        lista.get(0).marca = "Toyota";
+        lista.get(0).modelo = "Corolla";
+        lista.get(0).ano = 2020;
 
-        /*
-        exibir() → só executa ação (void)
-        idadeDoCarro() → retorna valor
-        */
+        lista.add(new Carro());
+        lista.get(1).marca = "Honda";
+        lista.get(1).modelo = "Civic";
+        lista.get(1).ano = 2018;
+
+        lista.add(new Carro());
+        lista.get(2).marca = "Ford";
+        lista.get(2).modelo = "Ka";
+        lista.get(2).ano = 2015;
+
+        for (Carro c : lista) {
+            c.exibir();
+        }
     }
 }
