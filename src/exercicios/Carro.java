@@ -19,6 +19,14 @@ public class Carro {
         this.ano = 0;
         totalCarros++;
     }
+    public static void imprimirTotal() {
+        System.out.println("Total de carros criados: " + totalCarros);
+
+        // b) Se você tentar a linha abaixo, o IntelliJ vai dar erro:
+        // System.out.println(modelo);
+        // c) O erro ocorre porque 'static' pertence à classe e 'modelo' pertence a um objeto.
+        // O método static não sabe "qual" modelo imprimir, pois não há um objeto 'this' aqui.
+    }
 
     public String getMarca() {
         return marca;
