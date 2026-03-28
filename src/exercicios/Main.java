@@ -2,11 +2,11 @@ package exercicios;
 public class Main {
     public static void main(String[] args) {
 
-        Carro c1 = new Carro();
-        c1.setMarca("Toyota");
-        c1.setModelo("Corolla");
-        c1.setAno(1885);
-
+        Carro c1 = new Carro("Toyota", "Corolla", 2015);
         c1.exibir();
+
+        /*
+        Construtor já cria o objeto completo
+        */
     }
 }
