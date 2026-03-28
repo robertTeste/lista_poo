@@ -7,7 +7,7 @@ public class Main {
 
     public static void main(String[] args) {
 
-      init Scanner sc = new Scanner(System.in);
+       Scanner sc = new Scanner(System.in);
 
         ArrayList<Lanche> cardapio = new ArrayList<>();
         ArrayList<Pedido> pedidos = new ArrayList<>();
