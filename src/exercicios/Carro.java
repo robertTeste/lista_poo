@@ -4,17 +4,22 @@ public class Carro {
     private String marca;
     private String modelo;
     private int ano;
+    static int totalCarros = 0;
 
     public Carro(String marca, String modelo, int ano) {
         this.marca = marca;
         this.modelo = modelo;
         setAno(ano);
+        totalCarros++;
     }
+
     public Carro() {
         this.marca = "Desconhecido";
         this.modelo = "Desconhecido";
         this.ano = 0;
+        totalCarros++;
     }
+
     public String getMarca() {
         return marca;
     }

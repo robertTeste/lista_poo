@@ -11,5 +11,6 @@ public class Main {
         Construtor já cria o objeto completo
         */
 
+        System.out.println(Carro.totalCarros);//static pertence à classe
     }
 }
